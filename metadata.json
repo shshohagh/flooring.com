@@ -1,0 +1,6 @@
+{
+  "name": "FlooringCompany.com - Premium Flooring Solutions",
+  "description": "Minimalist and intuitive high-end flooring solutions interface featuring hardwood, luxury vinyl, tile, and carpet craftsmanship with instant quote estimator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

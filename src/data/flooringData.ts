@@ -1,0 +1,221 @@
+import { ServiceItem, ProjectItem, TestimonialItem, ProcessStep, BlogItem } from '../types';
+
+export const ASSET_PATHS = {
+  heroLivingRoom: '/src/assets/images/hero_flooring_living_room_1794223061407.jpg',
+  slatWallArmchair: '/src/assets/images/flooring_accent_slat_armchair_1794223062837.jpg',
+  herringboneOffice: '/src/assets/images/flooring_herringbone_office_1794223062586.jpg',
+  diningPendant: '/src/assets/images/flooring_dining_pendant_1794223062869.jpg',
+  staircaseSunlight: '/src/assets/images/flooring_staircase_sunlight_1794223063270.jpg',
+  originalMockup: '/public/assets/aistudio/FB_IMG_1794222900963_33f28f6c.jpg',
+};
+
+export const SERVICES_DATA: ServiceItem[] = [
+  {
+    id: 'hardwood',
+    title: 'Hardwood Flooring',
+    tagline: 'Classic elegance that lasts.',
+    category: 'hardwood',
+    description: 'Solid and engineered timber planks crafted from European White Oak, Hickory, and Walnut, finished with matte UV cure.',
+    image: ASSET_PATHS.heroLivingRoom,
+    iconName: 'tree',
+    features: ['100% Solid & Engineered Oak', 'Refinishable up to 4 times', 'Lifetime structural warranty'],
+    priceRange: '$10 - $20 / sq. ft.',
+    durabilityRating: 'Heavy Residential / Commercial',
+    popularFor: 'Living Rooms, Hallways & Bedrooms',
+  },
+  {
+    id: 'tile',
+    title: 'Tile Flooring',
+    tagline: 'Stylish. Strong. Water-resistant.',
+    category: 'tile',
+    description: 'Precision Italian and Spanish porcelain tiles, glazed ceramic, and natural marble slabs engineered for ultimate water resistance.',
+    image: ASSET_PATHS.diningPendant,
+    iconName: 'grid',
+    features: ['100% Waterproof seal', 'Scratch and stain impervious', 'Radiant floor heating compatible'],
+    priceRange: '$9 - $21 / sq. ft.',
+    durabilityRating: 'Ultra High Traffic',
+    popularFor: 'Kitchens, Bathrooms & Patios',
+  },
+  {
+    id: 'vinyl',
+    title: 'Vinyl Flooring',
+    tagline: 'Affordable luxury for every space.',
+    category: 'vinyl',
+    description: 'Rigid-core SPC Luxury Vinyl Plank (LVP) featuring hyper-realistic embossed wood grain, waterproof cores, and sound-dampening acoustic backing.',
+    image: ASSET_PATHS.slatWallArmchair,
+    iconName: 'layers',
+    features: ['20-mil commercial wear layer', 'Acoustic cork sound underlayment', 'Pet-proof and kid-friendly'],
+    priceRange: '$5 - $10 / sq. ft.',
+    durabilityRating: 'High Traffic & Pet Heavy',
+    popularFor: 'Basements, Open Living & Rentals',
+  },
+  {
+    id: 'carpet',
+    title: 'Carpet Flooring',
+    tagline: 'Soft. Comfortable. Inviting.',
+    category: 'carpet',
+    description: 'High-density plush cut-pile, Berber loops, and stain-resistant hypoallergenic wool blends for superior sound absorption and comfort.',
+    image: ASSET_PATHS.staircaseSunlight,
+    iconName: 'sparkles',
+    features: ['Built-in StainShield™ barrier', 'High thermal insulation factor', 'Low-VOC clean air certified'],
+    priceRange: '$3.50 - $8 / sq. ft.',
+    durabilityRating: 'Cozy Residential',
+    popularFor: 'Master Suites, Nurseries & Family Dens',
+  },
+];
+
+export const PROJECTS_DATA: ProjectItem[] = [
+  {
+    id: 'proj-1',
+    title: 'Modern Scandinavian Living Space',
+    category: 'hardwood',
+    location: 'Tribeca, New York',
+    image: ASSET_PATHS.heroLivingRoom,
+    material: 'Wide Plank European White Oak (7.5" Brushed)',
+    squareFeet: 1450,
+    completionTime: '4 Days',
+    description: 'Seamless open-concept flooring installation complementing panoramic black steel French windows and natural minimalist furniture.',
+  },
+  {
+    id: 'proj-2',
+    title: 'Executive Financial Boardroom',
+    category: 'commercial',
+    location: 'Midtown Manhattan',
+    image: ASSET_PATHS.herringboneOffice,
+    material: 'Artisan Chevron Herringbone Walnut Planks',
+    squareFeet: 2800,
+    completionTime: '6 Days',
+    description: 'High-specification acoustic commercial installation featuring custom mitered border profiles and acoustic subfloor deadening.',
+  },
+  {
+    id: 'proj-3',
+    title: 'Architectural Timber Staircase & Landing',
+    category: 'hardwood',
+    location: 'Greenwich, Connecticut',
+    image: ASSET_PATHS.staircaseSunlight,
+    material: 'Natural Solid White Oak with Frameless Glass',
+    squareFeet: 920,
+    completionTime: '3 Days',
+    description: 'Custom tread fabrication and seamless grain continuity between ground floor, multi-flight stairs, and upper gallery landing.',
+  },
+  {
+    id: 'proj-4',
+    title: 'Minimalist Dining & Lounge Pavilion',
+    category: 'hardwood',
+    location: 'SoHo, New York',
+    image: ASSET_PATHS.diningPendant,
+    material: 'Smoked American Walnut with Matte Polyurethane',
+    squareFeet: 1200,
+    completionTime: '3 Days',
+    description: 'Warm ambient illumination paired with deep walnut grain and flush-mounted brass floor transitions to garden terrace.',
+  },
+];
+
+export const PROCESS_DATA: ProcessStep[] = [
+  {
+    number: 1,
+    title: 'Consultation',
+    description: 'Share your vision with us.',
+    details: ['In-home or virtual room design consultation', 'Free physical sample box delivered to your door', 'Transparent upfront pricing breakdown'],
+    iconName: 'message-square',
+  },
+  {
+    number: 2,
+    title: 'Measurement',
+    description: 'We take precise measurements.',
+    details: ['Laser room scanning for exact square footage', 'Subfloor moisture & levelness diagnostics', 'Zero surprise estimation guarantee'],
+    iconName: 'ruler',
+  },
+  {
+    number: 3,
+    title: 'Installation',
+    description: 'Our experts do the work.',
+    details: ['Licensed, bonded Master Floor Technicians', 'HEPA-filtered dustless cutting system', 'Old floor eco-friendly recycling & disposal'],
+    iconName: 'wrench',
+  },
+  {
+    number: 4,
+    title: 'Enjoy',
+    description: 'Love your new floors!',
+    details: ['Final walkthrough with lead foreman', 'Care & maintenance starter gift set', 'Written 15-year craftsmanship guarantee'],
+    iconName: 'check-circle',
+  },
+];
+
+export const TESTIMONIALS_DATA: TestimonialItem[] = [
+  {
+    id: 't-1',
+    quote: 'Exceptional service and outstanding quality! Our new floors look amazing and transformed our entire downstairs living space. The installation crew was punctual, meticulous, and completely clean.',
+    author: 'Sarah Mitchell',
+    role: 'Homeowner',
+    location: 'Brooklyn, NY',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=160&auto=format&fit=crop&q=80',
+    flooringInstalled: 'European White Oak Wide Plank',
+  },
+  {
+    id: 't-2',
+    quote: 'We replaced 2,400 sq ft of dated tile with luxury vinyl plank in our family home. The quote was accurate to the dollar, and the whole project wrapped up a day ahead of schedule. Highly recommended!',
+    author: 'David Chen',
+    role: 'Architect & Homeowner',
+    location: 'Hoboken, NJ',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&auto=format&fit=crop&q=80',
+    flooringInstalled: 'Rigid Core SPC Vinyl',
+  },
+  {
+    id: 't-3',
+    quote: 'From the initial laser measurement to the final stair tread polish, the craftsmanship is unbelievable. Our real estate appraisal jumped noticeably after these floors were put in.',
+    author: 'Elena & Marcus Vance',
+    role: 'Real Estate Investors',
+    location: 'Westchester, NY',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=160&auto=format&fit=crop&q=80',
+    flooringInstalled: 'Artisan Chevron Herringbone',
+  },
+];
+
+export const BLOG_POSTS: BlogItem[] = [
+  {
+    id: 'tips-1',
+    title: 'How to Choose the Right Flooring for Your Home',
+    category: 'Buying Guide',
+    readTime: '4 min read',
+    date: 'March 14, 2026',
+    image: ASSET_PATHS.heroLivingRoom,
+    excerpt: 'Key considerations when evaluating foot traffic, pet durability, moisture exposure, and long-term resale value across hardwood, tile, and vinyl.',
+    content: [
+      'Choosing the right flooring requires balancing aesthetic warmth with real-life daily demands. Hardwood provides unmatched resale appreciation, while luxury vinyl plank offers 100% waterproof performance for families with pets.',
+      'Always examine subfloor structure: concrete slabs often pair best with engineered hardwood or floating luxury vinyl, whereas solid hardwood excels on traditional plywood joists.',
+      'Check the wear layer specifications before purchasing. Commercial 20-mil wear layers ensure your investment resists micro-scratches for over 20 years.'
+    ],
+  },
+  {
+    id: 'tips-2',
+    title: 'Flooring Ideas for Modern Living',
+    category: 'Design Trends',
+    readTime: '5 min read',
+    date: 'April 02, 2026',
+    image: ASSET_PATHS.diningPendant,
+    excerpt: 'Explore wide-plank layouts, warm organic oak tones, flush transitions, and architectural herringbone patterns leading luxury home design.',
+    content: [
+      'Modern open-concept floorplans benefit greatly from wider plank profiles (7.5 inches to 9 inches), which create calm visual lines and reduce visible seams.',
+      'Pairing natural timber floors with black metal hardware and warm vertical wood slat walls creates an effortless Scandinavian-Japanese (Japandi) interior style.',
+      'Continuous flooring throughout common rooms without awkward transition T-moldings creates an expansive visual flow from foyer into kitchen and living areas.'
+    ],
+  },
+  {
+    id: 'tips-3',
+    title: 'Simple Tips to Keep Your Floors Looking New',
+    category: 'Care & Maintenance',
+    readTime: '3 min read',
+    date: 'April 20, 2026',
+    image: ASSET_PATHS.slatWallArmchair,
+    excerpt: 'Preventative care guidelines from our master installers to preserve wood finishes, grout lines, and acoustic underlayments for decades.',
+    content: [
+      'Apply heavy-duty felt pads under all chairs, table legs, and heavy sofas. Replace them twice a year to prevent grit accumulation.',
+      'Avoid steam mops on solid or engineered hardwood flooring as high heat and forced moisture can degrade urethane seals and warp wood fibers.',
+      'Maintain indoor humidity between 35% and 55% using home humidifiers in winter to prevent natural plank gapping or seasonal cupping.'
+    ],
+  },
+];
